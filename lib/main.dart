@@ -31,34 +31,38 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF2E3B57),
-      appBar: AppBar(
-        title: Text('قم بتسجيل الدخول'),
-        centerTitle: true,
-        backgroundColor: Color(0xFF278E8F),
-      ),
-      body: SingleChildScrollView(
-        child: Column(
+        backgroundColor: Color(0xFF2E3B57),
+        appBar: AppBar(
+          title: Text('قم بتسجيل الدخول'),
+          centerTitle: true,
+          backgroundColor: Color(0xFF278E8F),
+        ),
+        body: ListView(
           children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.only(top: 15.0, bottom: 100.0),
-              child: Center(
-                child: Container(
-                    padding: EdgeInsets.only(bottom: 00.0),
-                    width: 250,
-                    height: 200,
-                    child: Image.asset('assets/logo-01.png')),
-              ),
+            Container(
+              margin: EdgeInsets.only(
+                  bottom: 105.0, top: 35.0, left: 20.0, right: 20.0),
+              width: 250,
+              height: 200,
+              child: Image.asset('assets/logo-01.png'),
             ),
-            const Padding(
-              padding:
-                  EdgeInsets.only(left: 20.0, right: 20.0, top: 0, bottom: 0),
-              child: TextField(
-                style: TextStyle(
-                  color: Colors.white,
-                ),
+            Container(
+              margin: EdgeInsets.only(left: 20.0, right: 20.0),
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.2),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+              ),
+              child: const TextField(
+                style: TextStyle(color: Colors.white, fontSize: 14),
                 textAlign: TextAlign.start,
-                decoration: InputDecoration( //input user name
+                decoration: InputDecoration(
+                    //input user name
                     filled: true,
                     fillColor: Color(0xFF2E3B5A),
                     enabledBorder: OutlineInputBorder(
@@ -74,15 +78,24 @@ class _LoginState extends State<Login> {
                     hintText: 'Enter valid email id as abc@gmail.com'),
               ),
             ),
-            const Padding(
-              padding:
-                  EdgeInsets.only(left: 20.0, right: 20.0, top: 15, bottom: 30),
-              child: TextField(
-                style: TextStyle(color: Colors.white),
+            Container(
+              margin: EdgeInsets.all(20.0),
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.2),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+              ),
+              child: const TextField(
+                style: TextStyle(color: Colors.white, fontSize: 14),
                 textAlign: TextAlign.start, //تحديد اتجاة الكتابة
                 obscureText: true,
                 decoration: InputDecoration(
-                  filled: true,
+                    filled: true,
                     fillColor: Color(0xFF2E3B5A),
                     enabledBorder: OutlineInputBorder(
                       borderSide: BorderSide(
@@ -97,28 +110,33 @@ class _LoginState extends State<Login> {
                     hintText: 'Enter secure password'),
               ),
             ),
-           Container(
-              height: 50,
-              width: 250,
+            Container(
+              margin: const EdgeInsets.only(
+                  left: 20.0, right: 20.0, top: 0, bottom: 0),
               decoration: BoxDecoration(
-                  color: Color(0xFF2C9FA0),
-                  borderRadius: BorderRadius.circular(25)),
-              child: ElevatedButton(
+                color: Color(0xFF2C9FA0),
+                borderRadius: BorderRadius.circular(25),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.2),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+              ),
+              child: TextButton(
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => TeachersPage()));
                 },
                 child: const Text(
                   'Login',
-                  style: TextStyle(
-                      color: Colors.white70, fontSize: 16),
-                  //hwo shadow in the buttun?
+                  style: TextStyle(color: Colors.white70, fontSize: 16),
                 ),
               ),
             ),
           ],
-        ),
-      ),
-    );
+        ));
   }
 }

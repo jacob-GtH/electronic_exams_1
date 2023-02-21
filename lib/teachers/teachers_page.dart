@@ -28,49 +28,93 @@ class _TeachersPageState extends State<TeachersPage> {
               ),
             ),
             ListTile(
-              leading: const Icon(Icons.settings, color: Color(0xFF278E8F),),
-              title: const Text('Settings', style: TextStyle(color: Color(0xFF278E8F)),),
+              leading: const Icon(
+                Icons.settings,
+                color: Color(0xFF278E8F),
+              ),
+              title: const Text(
+                'Settings',
+                style: TextStyle(color: Color(0xFF278E8F)),
+              ),
               onTap: () {
                 // do something
               },
-              trailing: const Icon(Icons.arrow_forward_ios, color: Color(0xFF278E8F), size: 13.0,),
-              contentPadding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 0.0),
+              trailing: const Icon(
+                Icons.arrow_forward_ios,
+                color: Color(0xFF278E8F),
+                size: 13.0,
+              ),
+              contentPadding:
+                  EdgeInsets.symmetric(horizontal: 20.0, vertical: 0.0),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20.0),
               ),
             ),
             ListTile(
-              leading: const Icon(Icons.image, color: Color(0xFF278E8F),),
-              title: const Text('Change User Picture', style: TextStyle(color: Color(0xFF278E8F)),),
+              leading: const Icon(
+                Icons.image,
+                color: Color(0xFF278E8F),
+              ),
+              title: const Text(
+                'Change User Picture',
+                style: TextStyle(color: Color(0xFF278E8F)),
+              ),
               onTap: () {
                 // do something
               },
-              trailing: const Icon(Icons.arrow_forward_ios, color: Color(0xFF278E8F), size: 13.0,),
-              contentPadding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 0.0),
+              trailing: const Icon(
+                Icons.arrow_forward_ios,
+                color: Color(0xFF278E8F),
+                size: 13.0,
+              ),
+              contentPadding:
+                  const EdgeInsets.symmetric(horizontal: 20.0, vertical: 0.0),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20.0),
               ),
             ),
             ListTile(
-              leading: const Icon(Icons.account_circle_outlined, color: Color(0xFF278E8F),),
-              title: const Text('Logos', style: TextStyle(color: Color(0xFF278E8F)),),
+              leading: const Icon(
+                Icons.account_circle_outlined,
+                color: Color(0xFF278E8F),
+              ),
+              title: const Text(
+                'Logos',
+                style: TextStyle(color: Color(0xFF278E8F)),
+              ),
               onTap: () {
                 // do something
               },
-              trailing: const Icon(Icons.arrow_forward_ios, color: Color(0xFF278E8F), size: 13.0,),
-              contentPadding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 0.0),
+              trailing: const Icon(
+                Icons.arrow_forward_ios,
+                color: Color(0xFF278E8F),
+                size: 13.0,
+              ),
+              contentPadding:
+                  const EdgeInsets.symmetric(horizontal: 20.0, vertical: 0.0),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20.0),
               ),
             ),
             ListTile(
-              leading: const Icon(Icons.exit_to_app, color: Color(0xFF278E8F),),
-              title: const Text('Logout',style: TextStyle(color: Color(0xFF278E8F)),),
+              leading: const Icon(
+                Icons.exit_to_app,
+                color: Color(0xFF278E8F),
+              ),
+              title: const Text(
+                'Logout',
+                style: TextStyle(color: Color(0xFF278E8F)),
+              ),
               onTap: () {
                 // do something
               },
-              trailing: const Icon(Icons.arrow_forward_ios, color: Color(0xFF278E8F), size: 13.0,),
-              contentPadding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 0.0),
+              trailing: const Icon(
+                Icons.arrow_forward_ios,
+                color: Color(0xFF278E8F),
+                size: 13.0,
+              ),
+              contentPadding:
+                  const EdgeInsets.symmetric(horizontal: 20.0, vertical: 0.0),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20.0),
               ),

@@ -4,7 +4,10 @@ import 'create_questions.dart';
 import 'view_questions.dart';
 
 class Exams extends StatefulWidget {
+  const Exams({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _ExamsState createState() => _ExamsState();
 }
 
